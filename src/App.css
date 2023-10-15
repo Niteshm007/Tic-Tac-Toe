@@ -5,6 +5,65 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}.TTT {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hd{
+  font-size: 50px;
+}
+
+.Board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  width: 100px;
+  height: 100px;
+  background-color: #e4eec0;
+  cursor: pointer;
+}
+
+.cell{
+  border-radius: 10px;
+}
+
+.cell.X {
+  color: #f00;
+} 
+
+.cell.O {
+  color: #00f;
+}
+
+.result {
+  margin-top: 20px;
+  text-align: center;
+  color: rgb(234, 4, 255);
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color:rgb(1, 255, 65);
+  border-radius: 15px;
+  color: #ff00bb;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color:aqua;
+  color: black;
 }
 
 @media (prefers-reduced-motion: no-preference) {
